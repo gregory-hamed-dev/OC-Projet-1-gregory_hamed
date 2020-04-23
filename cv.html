@@ -1,92 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Cv Grégory HAMED</title>
-<link rel="icon" type="image/png" href="favicon.png"/>
+
+ <meta charset="utf-8">
+ <title>Cv Grégory HAMED</title>
+ <link rel="icon" type="image/png" href="favicon.png"/>
+ <link rel="stylesheet" href="fontawsome/css/all.css">
+ <link rel="stylesheet" href="cv.css"/>
 
 </head> 
 
 <body>
-  <div class="conteneur principal">
-       <aside>
-           <div class="photo"><img src="portrait.png" alt="Ma photo de CV"></div>
+  <div id="conteneur-principal">
 
-        <!-- liseré gauche avec La partie contact, à propos et photo -->
 
-           <h2 class="couleur">CONTACT</h2>
-             <div><p>Adresse <br>8 place Marcel Aymé, 16000 Angoulême </p></div>
-             <div><p>téléphone <br>06 74 33 23 96 </p></div>
-             <div><p>Email <br>gregoryhamed@yahoo.fr</p></div>
-             <div><p><a href="https://www.linkedin.com/in/gr%C3%A9gory-hamed-457b5a148/" target="blank">Linkedin</a></p></div>
+<!-- liseré gauche avec La partie contact, à propos et photo -->
+
+       <aside> 
+         <!--Photo de mon cv-->
+          <article id="photo"><img id="photo-cv" src="portrait.jpg" alt="Ma photo de CV"></article>
+
+          <!--Mes coordonnées-->
+          <article id="contact">
+            <h2 class="couleur">CONTACT</h2>
+            <p>Adresse <br>8 place Marcel Aymé, 16000 Angoulême </p>
+            <p>téléphone <br>06 74 33 23 96 </p>
+            <p>Email <br>gregoryhamed@yahoo.fr </p>
+            <p><a href="https://www.linkedin.com/in/gr%C3%A9gory-hamed-457b5a148/" target="blank"><i class="fab fa-linkedin" alt="logo linkedin"></i></a>
+               <a href="https://github.com/gregory-hamed-dev" target="blank"><i class="fab fa-github-square"></i></a>
+               <a href="https://www.gregoryhamed-redacteurweb.fr/" target="blank"><i class="fas fa-server"></i></a>
+            </p>
+          </article>
            
            <!--présentation de mon parcours -->
-           
+          <article id="propos">
            <h2 class="couleur">À PROPOS DE MOI</h2>
-            <P>Après avoir travaillé dans l'éducation nationale, j'ai eu l'opportunité d'occuper un poste de rédacteur web au sein d'une entreprise majeure dans le secteur du marketing digital<br>
-        Le coeur du métier consistait en la création de sites internet via un CMS interne, la création de logos et la mise en place du référencement naturel. <br>
+            <P class="justify">Après avoir travaillé dans l'éducation nationale, j'ai eu l'opportunité d'occuper un poste de rédacteur web au sein d'une entreprise majeure dans le secteur du marketing digital<br>
+        Le coeur du métier consistait à créer des sites internet via un CMS interne, à concevoir et produire des logos, et mettre en place le référencement naturel. <br>
     J'ai appris également grace à cette expérience le langage HTML et CSS. Ce fut une véritbale révélation. Créatif de nature, j'ai pu exploiter ces langages pour proposer des rendus personnalisés. <br>
- Suite à cette expérience enrichissante, j'ai pris le statut de rédacteur web freelance. Travailler avec des clients différents a aussi bien enrichi mes compétences tout en me permettant d'acquérir une grande souplesse.<br>
-  Passionné par la création digitale, j'ai découvert OpenClassrooms. Après avoir suivi des cours gratuits et voulant faire carrière dans le développement web, j'ai décidé de suivre une formation diplomante. Découvrir une passion est une chance pour un être humain, en faire son métier est un devoir <br>
+ Suite à cette expérience enrichissante, j'ai pris le statut de rédacteur web freelance. Travailler avec des clients différents a aussi bien enrichi mes compétences que ma faculté à faire preuve de souplesse.<br>
+  Passionné par la création digitale, j'ai découvert OpenClassrooms. Après avoir suivi des cours gratuits et voulant faire carrière dans le développement web, j'ai décidé de suivre une formation diplomante.  Se découvrir une passion est une chose rare, en faire son métier est une chance. <br>
             </P>
+          </article>
 
-           <!--Mes icônes relatives à mes passions et activités exercées dans mon temps libre-->
-
-           <h2 class="couleur">PASSION</h2> 
-             <span><img src="icones/arts.svg" alt="icone art"></span>
-             <span><img src="icones/muscu.svg" alt="icone musculation"></span>
-             <span><img src="icones/guitar.svg" alt="icone guitare"></span>
+           <!--Mes icônes relatives à mes passions et activités exercées sur mon temps libre-->
+          <article id="passion">
+           <h2 class="couleur">PASSIONS</h2> 
+            <figure>
+              <i class="fas fa-palette" alt="icone art"></i>
+              <i class="fas fa-film" alt="icone cinéma"></i> 
+              <i class="fas fa-guitar" alt="icone guitare"></i> 
+            </figure> 
+          </article> 
        </aside>
-     
-       <article>
 
-         <!--Partie relative au coeur de mon cv-->
+<!--Partie relative au coeur de mon cv-->
+  
+       <section id="coeur-cv">
 
-          <h1>Grégory <span id="nom couleur">HAMED</span></h1>
-            <p id="métier">Déveppeur Web full Stack</p>
-         
+         <div><h1><span id="nom-couleur">GRÉGORY</span> HAMED</h1>
+          <h2 id="metier"><span id="underline">Dével</span>oppeur Web full Stack</h2>
+         </div>
          <!--Mes formations--> 
 
-          <Section class="formation">
-            <h2><span><img src="icones/graduation.svg" alt="icone formation"></span>FORMATION</h2>
-              <div class="sous-ensemble">
-                <div class="date"></div>
-                 <p></<span><img src="icones/cercle_sansfond.svg" alt="icone cercle sans fond"></span>Décembre 2020<p>
-                <div class="contenus"></div>
-                 <h3>OpenClassrooms</h3> 
-                  <p>Développeur Web</p> 
-                  <p>Formation au HTML, CSS, Java Script. Intégration d'une maquette. Gestion de bases de données. Gestion de la partie serveur avce le langage PHP. utilisation de Git et GItHub. Sécurisation d'applications. Référencement naturel</p> 
-                  
+          <article id="formation">
+            <h2 class="border"><i class="fas fa-graduation-cap" alt="icône chapeau de lauréat"></i>FORMATION</h2>
 
-              </div>
               <div class="sous-ensemble">
                 <div class="date">
-                 <p><span><img src="icones/cercle_plein.svg" alt="cercle"></span>Juin 2015</p>
+                  <i class="far fa-dot-circle" alt="icône rond avec un point"></i>
+                  <p> Décembre 2020</p>
                 </div>
-                <div class="contenus"> 
-                 <h3>Université de Poitiers</h3>
-                  <p>Master MEEF</p>
-                  <p>Formation aux métiers de l'éducation et de la formation. Pédagogie, didactique des mathématiques et du français. Stage en classe de primaire</p>
-                </div> 
-                
+                <div class="contenus">                 
+                  <h3>OPENCLASSROOMS</h3> 
+                  <p>Développeur Web</p> 
+                  <p class="justify">Formation au HTML, CSS, Java Script. Intégration d'une maquette. Gestion de bases de données. Gestion de la partie serveur avce le langage PHP. utilisation de Git et GItHub. Sécurisation d'applications. Référencement naturel</p> 
+                </div>
               </div>
-          </Section>
+              
+             <div class="sous-ensemble">
+               <div class="date">
+                <i class="fas fa-circle" alt="icône rond"></i><p>Juin 2015</p>
+               </div>
+               <div class="contenus"> 
+                <h3>UNIVERSITÉ DE POITIERS</h3>
+                  <p>Master MEEF</p>
+                  <p class="justify">Formation aux métiers de l'éducation et de la formation. Pédagogie, didactique des mathématiques et du français. Stage en classe de primaire</p>
+               </div>                
+             </div>
+            </article>
           
          <!--Mes expériences professionnelles-->
 
-          <section class="expérience">
-            <h2><span><img src="icones/work.svg" alt="icone attaché-case"></span>EXPÉRIENCES PROFESSIONNELLES </h2>
+          <article id="expérience">
+            <h2 class="border"><i class="fas fa-briefcase" alt="icône attaché-case"></i>EXPÉRIENCES PROFESSIONNELLES</h2>
 
             <!-- 1-Partie sur le poste actuel de rédacteur web freelance -->
 
               <div class="sous-ensemble">
                 <div class="date">
-                  <p><span><img src="icones/cercle_sansfond.svg" alt="icone cercle sans fond"></span>Janvier 2018-poste actuel<br>Angoulême</p>
+                  <i class="far fa-dot-circle" alt="icône rond avec un point"></i><p>Depuis 2018<br>Angoulême</p>
                 </div>
                 <div class="contenus">
                   <h3>RÉDACTEUR WEB</h3>
                    <P>Freelance</P>
-                   <p>Rédaction de contenus pour différents clients comme Maison autour du monde, HelloWatt, Textbroker, Rédacteur.com, Scriber. Structuration des contenus textuelles. Optimisation du référencement naturel. Storytelling. Refontes de contenus existants. Audit SEO.</p>
+                   <p class="justify">Rédaction de contenus pour différents clients comme Maison autour du monde, HelloWatt, Textbroker, Rédacteur.com, Scriber. Structuration des contenus textuelles. Optimisation du référencement naturel. Storytelling. Refontes de contenus existants. Audit SEO.</p>
                 </div>
               </div>
 
@@ -94,12 +113,12 @@
 
               <div class="sous-ensemble">
                 <div class="date">
-                  <p><span><img src="icones/cercle_plein.svg" alt="icone cercle"></span>Septembre 2017-Décembre 2017<br>Angoulême</p>
+                  <i class="fas fa-circle" alt="icône rond"></i><p>2017-2018<br>Angoulême</p>
                 </div>
                 <div class="contenus">
                   <h3>RÉDACTEUR WEB</h3>
                    <P>Solocal Marketing service</P>
-                   <p>Conception des sites internet pour les clients pages jaunes et refonte de sites existants. Personnalisation avec le CSS. Création des visuels pour les sites (logo, icones). Rechercches sémantiques. Optimisation et amélioration du référencement. </p>
+                   <p class="justify">Conception des sites internet pour les clients pages jaunes et refonte de sites existants. Personnalisation avec le CSS. Création des visuels pour les sites (logo, icones). Rechercches sémantiques. Optimisation et amélioration du référencement. </p>
                 </div>
               </div>
               
@@ -107,12 +126,12 @@
 
               <div class="sous-ensemble">
                 <div class="date">
-                  <p><span><img src="icones/cercle_plein.svg" alt="icone cercle"></span>Septembre 2016-Septembre 2017<br>La Couronne</p>
+                  <i class="fas fa-circle" alt="icône rond"></i><p>2016-2017<br>La Couronne</p>
                 </div>
                 <div class="contenus">
-                  <h3>Assistant d'éducation</h3>
+                  <h3>ASSISTANT D'ÉDUCATION</h3>
                    <P>Lycée agricole de l'Oisellerie</P>
-                   <p>Encadrement des élèves en externat et en internat. Animations d'événements culturels au sein du lycée. Suivi administratif des élèves. Cours de soutien en français.</p>
+                   <p class="justify">Encadrement des élèves en externat et en internat. Animations d'événements culturels au sein du lycée. Suivi administratif des élèves. Cours de soutien en français.</p>
                 </div>
               </div>
 
@@ -120,12 +139,12 @@
 
               <div class="sous-ensemble">
                 <div class="date">
-                  <p><span><img src="icones/cercle_plein.svg" alt="icone cercle"></span>2013-2015<br>Angoulême</p>
+                  <i class="fas fa-circle" alt="icône rond"></i><p>2013-2015<br>Angoulême</p>
                 </div>
                 <div class="contenus">
-                  <h3>Professeur des écoles stagiaire</h3>
+                  <h3>PROFESSEUR DES ÉCOLES STAGIAIRE</h3>
                    <P>Éducation nationale</P>
-                   <p>Mise en place de séquences pédagogiques. Prise en main des élèves en classe entière, en petits groupes et en soutien. Différenciation pour s'adapter au niveau de chacun et prendre en compte les difficultés. Pris en charge de la maternelle à l'école élémentaire sur différentes écoles de la Charente</p>
+                   <p class="justify">Mise en place de séquences pédagogiques. Prise en main des élèves en classe entière, en petits groupes et en soutien. Différenciation pour s'adapter au niveau de chacun et prendre en compte les difficultés. Pris en charge de la maternelle à l'école élémentaire sur différentes écoles de la Charente</p>
                 </div>
               </div>
 
@@ -133,28 +152,26 @@
 
               <div class="sous-ensemble">
                 <div class="date">
-                  <p><span><img src="icones/cercle_plein.svg" alt="icone cercle"></span>2008-2012<br>Angoulême</p>
+                  <i class="fas fa-circle" alt="icône rond"></i><p>2008-2012<br>Angoulême</p>
                 </div>
                 <div class="contenus">
-                  <h3>Assistant d'éducation</h3>
+                  <h3>ASSISTANT D'ÉDUCATION</h3>
                    <P>Lycée Marguerite de Valois</P>
-                   <p>Encadrement des élèves en externat et en internat. Animations d'événements culturels au sein du lycée. Suivi adminitratif des élèves. Cours de soutien en français</p>
+                   <p class="justify">Encadrement des élèves en externat et en internat. Animations d'événements culturels au sein du lycée. Suivi adminitratif des élèves. Cours de soutien en français</p>
                 </div>
               </div>
 
-
-          </section>
+            </article>
 
          <!--Mes compétences-->   
-
-          <section class="compétences">
-            <h2><span><img src="icones/skills.svg" alt="icone mes compétences"></span>COMPÉTENCES</h2>
-              <div class="sous ensemble">
-                <div class="contenus">
+          <article id="competences">
+            <h2 class="border"><i class="fas fa-crown" alt="icône couronne"></i>MES COMPÉTENCES</h2>
+              
+                <div class="liste">
 
                  <!--sous-partie sur mes savoir-faire-->
 
-                  <h3>Mes savoir-faire</h3>
+                  <h3 class="place">MES SAVOIR-FAIRE</h3>
                    <ul>
                      <li>HTML et CSS</li>
                      <li>Wordpress</li>
@@ -165,23 +182,19 @@
                      <li>Git et GItHub</li>
                      <li>Référencement naturel</li>
                    </ul>
-                </div>
-
+            
                 <!--Sous-partie langues apprises-->
 
-                <div class="contenus">
-                  <h3>Langues</h3>
+                  <h3 class="place">LANGUES</h3>
                    <ul>
                      <li>Français</li>
                      <li>Anglais</li>
                      <li>Allemand</li>
                    </ul>
-                </div>
-                <div class="contenus">
 
                   <!--sous-partie mes centres d'intérêt-->
 
-                  <h3>Centres d'intérêt</h3>
+                  <h3 class="place">CENTRES D'INTÉRÊT</h3>
                    <ul>
                      <li>Design web</li>
                      <li>Informatique</li>
@@ -191,12 +204,9 @@
                      <li>Éducation</li>
                    </ul>
                 </div>
-              </div> <!--fermeture de la class sous ensemble-->
-          </section> 
-       </article>
-    </div> <!--Fermeture du conteneur principale-->
-  
-    
+            </article> 
+        </section> <!--fermeture du coeur du cv-->
+    </div> <!--Fermeture du conteneur principale-->   
 </body>
 
 </html>

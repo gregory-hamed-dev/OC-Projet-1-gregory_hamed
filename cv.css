@@ -1,0 +1,404 @@
+body
+{
+
+    color: #2f3640;
+    background-color: black;
+    margin: 0em;
+}
+
+/* conteneur principal du cv*/
+#conteneur-principal
+{
+    display: flex;
+    background-color: white;
+    border: 1px solid;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+/*----------------------*/
+
+/* 1-partie gauche du cv */
+aside
+{
+    background-color: #FFC312;
+    width: 35%;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+
+
+/*-----------------------------*/
+#photo
+{
+    padding-top: 20px;
+    text-align: center;  
+}
+
+#photo-cv
+{
+    width: 200px;
+    height: 200px;
+    border: 3px solid #FFC312 ;
+    border-radius: 50%;
+    
+}
+
+#propos
+{
+    flex: 1.5;
+}
+
+#passion
+{
+    flex: 0.25;
+}
+
+figure
+{
+    display: flex;
+    justify-content: space-around;
+}
+/*----------------------*/
+
+/*2-Partie droite du cv*/
+
+#coeur-cv
+{
+    display: flex;
+    flex-direction: column;   
+    width: 75%;
+}
+
+
+.contenus
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 5%;
+    margin-top: 1%;
+  
+}
+
+.sous-ensemble
+{
+    display: flex;
+    flex-direction: row;   
+    justify-content: center; 
+}
+
+.date
+{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-left: 10%;
+    font-style: italic;
+    
+}
+
+/* Partie compétences*/
+#competences
+{
+    
+    width: 100%;   
+}
+
+.liste
+
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;      
+}
+
+.liste :nth-child(1) { order: 1; }
+.liste :nth-child(2) { order: 4; }
+.liste :nth-child(3) { order: 3; }
+.liste :nth-child(4) { order: 6; }
+.liste :nth-child(5) { order: 2; }
+.liste :nth-child(6) { order: 5; }
+
+ul
+{
+    width: 30%;
+    text-align: center;
+    padding-left: 0;
+}
+
+li
+{
+    
+    list-style: none;
+    
+} 
+/*-----------------------------*/
+
+/*les paragraphes*/
+p
+{
+    font-family: roboto;
+    font-size: 1em;
+    padding-left: 10px;
+    padding-right: 10px;  
+}
+
+.justify
+{
+    text-align: justify;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+
+/* les différents titres*/
+
+h1
+{
+    font-size: 3em;
+    font-family: 'Domine-regular';
+    margin-left: 50px;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    
+  
+}
+
+#nom-couleur
+{
+    color: #FFC312;
+}
+
+#metier
+{
+   margin-left: 50px;
+   font-size: 30px;
+   margin-bottom: 100px; 
+}
+
+/* h2 = Développeur web fullstack*/
+#underline
+{
+    text-decoration: underline #FFC312;
+}
+
+
+.couleur /* h2 du aside*/
+{
+    background-color: #2C3A47;
+    color:#FFC312;
+    text-align: center;  
+    margin-left: 0px;
+    margin-right: 0px;  
+}
+
+h2
+{
+    font-size: 1.75em;
+    font-family: 'Domine-regular';  
+}
+
+.border /* H2 avec la bordure basse*/
+{
+    border-bottom: 2px solid #FFC312; 
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 5%;   
+    padding-bottom: 2%;
+}
+
+h3
+{  
+    padding-left: 10px;
+    font-family: 'Domine-regular';
+    font-size: 1.2em;   
+}
+
+/* h3 de la partie compétences*/
+.place
+{
+
+width: 30%;
+text-align: center;
+font-family: 'Domine-regular';
+font-size: 1.2em;
+}
+
+/*------------------------------*/
+
+/*Les icones svg*/
+
+.fa-dot-circle, .fa-circle /* icônes bulles pour les dates*/
+{
+    color: #FFC312;
+    font-size: 1.10em;
+    margin-top: 9%;
+}
+
+.fa-graduation-cap, .fa-briefcase, .fa-crown /* icônes des H2*/
+{
+    color: #FFC312;
+    font-size: 1.10em;
+    margin-right: 3%;
+}
+.fa-guitar, .fa-palette, .fa-film /* icônes pour mes passions*/
+{
+     font-size: 3em;
+     padding: 3%;
+     margin: 2%;
+     border: 2px solid;
+     border-radius: 50%;
+     
+}
+.fa-linkedin, .fa-server, .fa-github-square
+{
+    font-size: 2em;
+    color: #2C3A47;
+    margin-right: 6%;
+   
+}
+ 
+
+/*-----------------------------------*/
+
+/* partie pour le responsive design*/
+
+
+@media all and (max-width: 920px)
+{
+    
+    #conteneur-principal
+    {
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+
+    aside
+   {
+   width: 100%;
+   flex-direction: column;
+   flex-wrap: wrap;
+   }
+
+   .couleur
+   {
+       width: 100%;
+   }
+
+   .sous-ensemble
+   {
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+   }
+   .justify
+   {
+       width: 100%;
+       text-align: left;
+   }
+
+   .centenus
+   {
+       width :100%;
+      align-items: center;
+       margin: 0;
+       padding:0;
+   }
+
+   .date
+   {
+       width: 100%;
+       justify-content: center;
+       padding: 0;
+       margin: 0;
+   }
+
+   #formation
+   {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       padding: 0;
+       margin: 0;
+   }
+
+   .border /* H2 avec la bordure basse*/
+   {
+       text-align: center;
+       padding: 0;
+   }
+
+   #passion
+   {
+       padding-bottom: 5%;
+       
+   }
+   #competences
+   {
+       justify-content: center;
+   }
+   .liste
+   {
+       flex-direction: column;
+   }
+   .place
+   {
+       width: 100%;
+       
+   }
+   ul
+   {
+       width: 100%;
+   }
+
+  .liste :nth-child(1) { order: 1; }
+  .liste :nth-child(2) { order: 2; }
+  .liste :nth-child(3) { order: 3; }
+  .liste :nth-child(4) { order: 4; }
+  .liste :nth-child(5) { order: 5; }
+  .liste :nth-child(6) { order: 6; }
+  
+  h3 
+  {
+      padding: 0;
+  }
+  p 
+  {
+      padding: 5px;   
+  }
+
+  .fa-dot-circle, .fa-circle /* icônes bulles pour les dates*/
+{
+    color: #FFC312;
+    font-size: 1em;
+    margin-top: 9%;
+}
+
+.fa-graduation-cap, .fa-briefcase, .fa-crown /* icônes des H2*/
+{
+    color: #FFC312;
+    font-size: 1em;
+    margin-right: 2%;
+}
+.fa-guitar, .fa-palette, .fa-film /* icônes pour mes passions*/
+{
+     font-size: 2.5em;
+     padding: 3%;
+     margin: 1%;
+     border: 2px solid;
+     border-radius: 50%;
+     
+}
+ 
+}
