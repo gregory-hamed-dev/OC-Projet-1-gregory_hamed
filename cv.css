@@ -1,3 +1,15 @@
+@font-face 
+{
+    font-family: 'Roboto-regular';
+    src: url('polices/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Domine-Regular';
+    src: url('polices/Domine-Regular.ttf') format('truetype');
+}
+
 body
 {
 
@@ -19,7 +31,7 @@ body
 
 /*----------------------*/
 
-/* 1-partie gauche du cv */
+/* I-partie gauche du cv */
 aside
 {
     background-color: #FFC312;
@@ -28,10 +40,7 @@ aside
     flex-direction: column; 
 }
 
-
-
-
-/*-----------------------------*/
+/*Partie photo du cv*/
 #photo
 {
     padding-top: 20px;
@@ -46,12 +55,13 @@ aside
     border-radius: 50%;
     
 }
-
+/* Partie à propos de moi*/
 #propos
 {
     flex: 1.5;
 }
 
+/* Partie mes passions*/
 #passion
 {
     flex: 0.25;
@@ -64,7 +74,7 @@ figure
 }
 /*----------------------*/
 
-/*2-Partie droite du cv*/
+/*II-Partie droite du cv*/
 
 #coeur-cv
 {
@@ -100,6 +110,7 @@ figure
     padding-top: 10px;
     padding-left: 10%;
     font-style: italic;
+    margin-top: 1%;
     
 }
 
@@ -144,10 +155,12 @@ li
 /*les paragraphes*/
 p
 {
-    font-family: roboto;
+    font-family: 'Roboto-Regular';
     font-size: 1em;
     padding-left: 10px;
     padding-right: 10px;  
+    margin-top: 7%;
+   
 }
 
 .justify
@@ -163,7 +176,7 @@ p
 h1
 {
     font-size: 3em;
-    font-family: 'Domine-regular';
+    font-family: 'Domine-Regular';
     margin-left: 50px;
     margin-bottom: 0px;
     margin-top: 100px;
@@ -202,7 +215,7 @@ h1
 h2
 {
     font-size: 1.75em;
-    font-family: 'Domine-regular';  
+    font-family: 'Domine-Regular';  
 }
 
 .border /* H2 avec la bordure basse*/
@@ -217,7 +230,7 @@ h2
 h3
 {  
     padding-left: 10px;
-    font-family: 'Domine-regular';
+    font-family: 'Domine-Regular';
     font-size: 1.2em;   
 }
 
@@ -227,7 +240,6 @@ h3
 
 width: 30%;
 text-align: center;
-font-family: 'Domine-regular';
 font-size: 1.2em;
 }
 
@@ -239,7 +251,7 @@ font-size: 1.2em;
 {
     color: #FFC312;
     font-size: 1.10em;
-    margin-top: 9%;
+    margin-top: 7%;
 }
 
 .fa-graduation-cap, .fa-briefcase, .fa-crown /* icônes des H2*/
@@ -309,7 +321,7 @@ font-size: 1.2em;
    .centenus
    {
        width :100%;
-      align-items: center;
+       align-items: center;
        margin: 0;
        padding:0;
    }
@@ -375,7 +387,8 @@ font-size: 1.2em;
   }
   p 
   {
-      padding: 5px;   
+      padding: 5px;
+      font-family: 'Roboto-Regular';   
   }
 
   .fa-dot-circle, .fa-circle /* icônes bulles pour les dates*/
